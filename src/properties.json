@@ -1,0 +1,7265 @@
+{
+  "_managers": {
+    "type": "standard/TransformNode",
+    "behaviors": {
+      "ItemManager": {},
+      "FlagsManager": {},
+      "PrefabManager": {},
+      "InputModeManager": {},
+      "InteractionManager": {
+        "playerEntityId": "player"
+      },
+      "NavMeshManager": {
+        "walkableClimb": 1,
+        "walkableHeight": 1,
+        "walkableRadius": 1,
+        "walkableSlopeAngle": 35
+      },
+      "DialogueManager": {},
+      "CrosshairManager": {
+        "hipfireImageUrl": "https://spatio-generations.s3.us-east-1.amazonaws.com/misc/icons/crosshair-dot.png"
+      },
+      "InventoryManager": {
+        "startingItems": []
+      },
+      "EffectsAndConditionalsManager": {}
+    },
+    "transform": {
+      "scaling": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "initialization": {},
+    "clicksSelectParent": true
+  },
+  "skybox": {
+    "type": "standard/Skybox",
+    "transform": {
+      "scaling": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "initialization": {
+      "url": "https://spatio-generations.s3.us-east-1.amazonaws.com/misc/hdr/case12.hdr",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 0
+    },
+    "clicksSelectParent": true
+  },
+  "terrain": {
+    "type": "standard/HeightMapTerrain",
+    "initialization": {
+      "size": 200,
+      "minAltitude": -3,
+      "maxAltitude": 0.001,
+      "heightUrl": "https://moonlake-generation-production.s3.us-east-1.amazonaws.com/projects/dd852931-951d-45f3-8594-1a1bdce34d10/final_height_map.png",
+      "splatUrl": "https://moonlake-generation-production.s3.us-east-1.amazonaws.com/projects/dd852931-951d-45f3-8594-1a1bdce34d10/splat_map.png",
+      "diffuse1Url": "https://spatio-generations.s3.us-east-1.amazonaws.com/materials/515e8afc-f253-4096-8ef1-7999522a8bfc/basecolor.png",
+      "diffuse2Url": "https://spatio-generations.s3.us-east-1.amazonaws.com/materials/7e9a43ac-4790-4169-b864-8dd3a5502e2b/basecolor.png",
+      "diffuse3Url": "https://spatio-generations.s3.us-east-1.amazonaws.com/materials/28f31a66-8fbc-413d-ab19-0ebcb3324743/basecolor.png",
+      "normal1Url": "https://spatio-generations.s3.us-east-1.amazonaws.com/materials/515e8afc-f253-4096-8ef1-7999522a8bfc/normal.png",
+      "normal2Url": "https://spatio-generations.s3.us-east-1.amazonaws.com/materials/7e9a43ac-4790-4169-b864-8dd3a5502e2b/normal.png",
+      "normal3Url": "https://spatio-generations.s3.us-east-1.amazonaws.com/materials/28f31a66-8fbc-413d-ab19-0ebcb3324743/normal.png",
+      "grassCoverage": "SPARSE"
+    },
+    "transform": {
+      "position": [
+        -6.303447,
+        0.17824,
+        0
+      ],
+      "rotation": [
+        0,
+        5156.620156,
+        0
+      ],
+      "scaling": [
+        20,
+        1,
+        10
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONCAVE",
+      "density": null,
+      "isTrigger": null,
+      "material": null
+    },
+    "behaviors": null,
+    "clicksSelectParent": null,
+    "animation": null,
+    "animated": null,
+    "material_type_for_sfx": null,
+    "object_type_for_sfx": null
+  },
+  "player": {
+    "type": "prefab",
+    "prefab": "FirstPersonPlayer",
+    "variables": {},
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0.985072,
+        2,
+        0.504306
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "wooden_wall_texture_copy_2": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        14.326811671347286,
+        -0.14022352941176308,
+        0.06402452142532056
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_2_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -8.756947,
+        0,
+        -0.553214
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        4.083714244662062,
+        -0.14022352941175598,
+        3.498393361493404
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        -3.333724,
+        0,
+        -3.876937
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        10
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -5.265018512752194,
+        -0.14022352941176308,
+        0.8174715833198931
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        1.154247,
+        0,
+        -1.316351
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_3": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -0.4369420206523334,
+        -0.15523083660009007,
+        7.125326742766104
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_3_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -4.539463,
+        0,
+        -2.780168
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243462
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_4": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        0.25354357447197895,
+        -0.1690229683347262,
+        9.078560993755556
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_4_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        6.708747,
+        0,
+        -4.860336
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_5": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        1.8108381175480606,
+        -0.14022352941176308,
+        -6.591297933177042
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_5_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -0.303568,
+        0,
+        1.329317
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.489149,
+        5,
+        19.565971
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_6": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        5.547660402454829,
+        -0.16522593515168893,
+        8.540827204089016
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_6_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -6.220404,
+        0,
+        -1.118717
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512275,
+        5.122749,
+        7.001389
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_7": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        5.027399139247625,
+        -0.17552941176470682,
+        11.01319977982497
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_7_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -2.382437,
+        0,
+        -3.787539
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        7
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        0.41878440929928296,
+        -0.17552941176470682,
+        12.433976473037587
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        0.103831,
+        0,
+        -3.738229
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        10
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_10": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        16.35649860703202,
+        -0.2103959345238664,
+        17.46888906575147
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_10_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -9.301228,
+        0,
+        -7.378378
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_11": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -13.316838892160387,
+        -0.16666698331380303,
+        7.086488220819227
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_11_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        8.27317,
+        0,
+        3.186647
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_2": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        0.40629470404263746,
+        -0.21440833104048806,
+        17.753005780108154
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_2_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        0.168791,
+        0,
+        0.224035
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        10
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_4": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -9.756067428647084,
+        -0.19118695636439753,
+        16.108706506976258
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_4_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        1.210695,
+        0,
+        -0.693
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        3
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_12": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        0.4593349272396967,
+        -0.2836974995695556,
+        26.227393739296755
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_12_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -0.135382,
+        0,
+        -6.797586
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.511773,
+        5.117729,
+        14.988275
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_14": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        0.6796676107654105,
+        -0.17552941176470682,
+        28.42231346806982
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_14_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        4.589594,
+        0,
+        -7.498426
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_15": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -8.33792973949801,
+        0.8038440754309448,
+        16.90573760798169
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_15_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        3.924054,
+        0,
+        -7.529979
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_16": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -12.934973749375507,
+        -0.14427008228699378,
+        11.146141267557992
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_16_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        4.127557,
+        0,
+        2.644483
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_17": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        14.662418810896519,
+        -0.18043144484409623,
+        11.388446556976609
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_17_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -5.026438,
+        0,
+        2.310887
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_18": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        7.97037634901421,
+        0.7822899338275846,
+        17.2262463587506
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_18_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        1.91028,
+        0,
+        -0.64901
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_8": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        16.363237950892028,
+        -0.19478153925000896,
+        4.106461819075264
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_8_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -11.11837,
+        0,
+        4.918264
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_9": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -14.322915057670235,
+        -0.14235820193184878,
+        10.604622339911485
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_9_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        9.910934,
+        0,
+        10.554863
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_13": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -14.174382284197858,
+        -0.14022352941175598,
+        7.122026898238023
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_13_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        5.391397,
+        0,
+        9.418482
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_3": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        9.843903572086035,
+        -0.2097330696937263,
+        24.83136165727778
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_3_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        -0.385043,
+        0,
+        -9.573992
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        3
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_19": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -18.352100986366118,
+        -0.19832875833904495,
+        19.75346033589514
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_19_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        5.258574,
+        0,
+        0.846064
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        9
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_20": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -19.91022927484433,
+        -0.18032807925604288,
+        11.538710849720761
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_20_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        6.819251,
+        0,
+        -2.063582
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_22": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -25.733161244731367,
+        -0.23395487859747277,
+        31.34012014506718
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_22_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        3.064886,
+        0,
+        -9.757647
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_5": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -16.971674762512713,
+        -0.18945175520542534,
+        27.68168199395042
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_5_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        -0.95377,
+        0,
+        -7.549875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        10
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_6": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -21.360683399227174,
+        -0.17561346334808547,
+        10.023806679731631
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_6_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        3.581249,
+        0,
+        0.96071
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        10
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_23": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -19.61005122833266,
+        -0.21128217071339606,
+        30.453235193924282
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_23_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        7.430467,
+        0,
+        -5.585386
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_24": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -30.873331533900203,
+        -0.24763099191873295,
+        10.316480289300094
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_24_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        8.311464,
+        0,
+        -0.553214
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_25": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -14.01470416599492,
+        -0.17552941176471393,
+        28.198951156828684
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_25_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -9.380472,
+        0,
+        -3.430826
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_27": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        18.425028266185876,
+        -0.26726632846098397,
+        22.802310893995536
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_27_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -4.261351,
+        0,
+        1.073759
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.665606,
+        6.656065,
+        17
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_28": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        24.5475607159566,
+        -0.2461411764705872,
+        5.413657970805607
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_28_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -10.418216,
+        0,
+        3.814309
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_29": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        28.535465683233518,
+        -0.39307387465458987,
+        22.757563447723626
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_29_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -5.217718,
+        0,
+        -3.070543
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.812214,
+        8.12215,
+        35
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_8": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        19.580865733853766,
+        -0.2917187395819738,
+        30.574487378870046
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_8_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        -1.201662,
+        0,
+        -6.6364
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        10
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_26": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -20.755401723875742,
+        -0.17552941176469972,
+        -0.6037396591008601
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_26_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        2.119259,
+        0,
+        6.598356
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        15
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_31": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        34.74542996402556,
+        -0.39913333333333867,
+        0.6687507110977151
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_31_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -15.902933,
+        0,
+        9.663295
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_7": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        19.017099910873082,
+        -0.2572328833505537,
+        15.304902578601737
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_7_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        -0.157452,
+        0.056802,
+        -0.439306
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        10
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_32": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        30.52595042707536,
+        -0.46029169194883934,
+        31.220404577539828
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_32_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -17.116528,
+        0,
+        -11.54356
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_33": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        36.92690675574258,
+        -0.6022493689704973,
+        26.569634059769744
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_33_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -12.344704,
+        0,
+        -6.984409
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_9": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -26.81537555542696,
+        -0.22151851423425484,
+        15.764401510084612
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_9_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        -0.247738,
+        0,
+        -0.365155
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        10
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_34": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -26.95309596980829,
+        -0.26169776072312345,
+        32.26790668674498
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_34_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -0.327002,
+        0,
+        -12.197737
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_35": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -28.620259606816923,
+        -0.22665599567086048,
+        9.475934739047368
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_35_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        1.229372,
+        0,
+        0.986709
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_36": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -38.4037280625267,
+        -0.3575833739641894,
+        11.549343369041708
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_36_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        6.668768,
+        0,
+        3.345695
+      ],
+      "rotation": [
+        0,
+        0,
+        -6.15775
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        15
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_10": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -18.481413949312625,
+        -0.20011229002797393,
+        29.188655244633793
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_10_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        0.518494,
+        0,
+        0.265419
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        10
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_11": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        21.3281138380192,
+        -0.38736470588233374,
+        45.74310699121811
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_11_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        -2.301702,
+        0,
+        -12.675037
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        10
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_37": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        20.539444396432444,
+        -0.38736470588235505,
+        42.37595184495317
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_37_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -10.830316,
+        0,
+        -11.08293
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_38": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        12.57505374115333,
+        -0.29321568627450745,
+        46.973516773172065
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_38_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        1.5669,
+        0,
+        -8.355515
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_40": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -10.096277109310533,
+        -0.2461411764705943,
+        42.08822072630794
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_40_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -12.508726,
+        0,
+        -11.464378
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_41": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -21.11056921460054,
+        -0.2859210386341928,
+        39.11451651912165
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_41_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -2.342302,
+        0,
+        -4.768288
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_42": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -8.132509075349127,
+        -0.22445936928765775,
+        36.929434171027296
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_42_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -4.011506,
+        0,
+        -2.805439
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_12": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -8.903021542020447,
+        -0.18085014343076722,
+        30.753519146308843
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_12_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        0.055377,
+        0,
+        -1.266666
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        10
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_14": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        0.21872229991533887,
+        -0.2036515513792594,
+        33.9826422313177
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_14_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        0.318858,
+        0,
+        -6.974939
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        10
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_15": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        0.9855365077991598,
+        -0.22282726399381403,
+        36.69829630035673
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_15_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        -0.475694,
+        0,
+        -0.53651
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        10
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_43": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        9.069426952395734,
+        -0.2844544322639777,
+        44.04804148722921
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_43_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        0.576194,
+        0,
+        -9.727966
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_13": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        9.164631180258114,
+        -0.20493660746343068,
+        26.001695207013327
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_13_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        0.430861,
+        0,
+        6.780035
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        3
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_39": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -6.556835831296121,
+        -0.2461411764705872,
+        47.834212565142664
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_39_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        11.41584,
+        0,
+        -20.873783
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_44": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        0.4425763568663621,
+        -0.2461411764705943,
+        46.36748655512626
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_44_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -0.262925,
+        0,
+        -20.826458
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_46": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -9.198921000340572,
+        -1.1564338112467283,
+        48.4572062104467
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_46_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        5.160498,
+        0,
+        -10.016491
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_47": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -12.22902942113766,
+        -0.8332969683024913,
+        42.076195872806736
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_47_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        3.655501,
+        0,
+        -7.914875
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_48": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        22.810438535777692,
+        -0.8228039215686209,
+        42.72021403879035
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_48_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -3.867468,
+        0,
+        -4.894981
+      ],
+      "rotation": [
+        0,
+        270,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_49": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        43.66591357811938,
+        -0.8698784313725412,
+        40.370582583050044
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_49_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -15.46653,
+        0,
+        -7.719833
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.5499997055688772,
+        5.500000512054126,
+        11
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_16": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        30.635678681889157,
+        -0.6180016378241007,
+        37.556514315961515
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_16_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        -2.350266,
+        0.123743,
+        0.104053
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        10
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_50": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        39.03344500841026,
+        -0.379646134901229,
+        28.180877743355133
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_50_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -10.82033,
+        0,
+        14.29147
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_17": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -17.621767663782236,
+        -0.7785960341865277,
+        39.05484370089423
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_floor_texture_copy_17_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+    },
+    "transform": {
+      "position": [
+        -0.467596,
+        0.594473,
+        -0.481659
+      ],
+      "rotation": [
+        0,
+        1.4749285424991844e-20,
+        -1.3934457688013666e-14
+      ],
+      "scaling": [
+        10,
+        1,
+        10
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_53": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        4.432523461780357,
+        -1.2065415708971372,
+        48.97644283526499
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_53_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -4.084373,
+        0,
+        -8.048725
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.75,
+        7.5,
+        15
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_54": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        6.674434589361508,
+        -1.3053176470588284,
+        52.31128601161707
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_54_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -1.791441,
+        0.691191,
+        -13.621098
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_55": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -19.162803633855845,
+        -1.617743216229563,
+        57.83315275967444
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_55_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -3.481056,
+        1.054064,
+        -18.421558
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_57": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -8.537474501588406,
+        -1.2948438152158133,
+        49.891465969881345
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_57_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -4.944334,
+        0.438258,
+        -11.348541
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_51": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        43.337367406927164,
+        -0.603859387971994,
+        36.94539405481316
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_51_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -10.268253,
+        0,
+        0.154945
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512,
+        5.12,
+        15
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_52": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        18.26625060624398,
+        -1.3053176470588284,
+        51.85493008585968
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_52_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        5.152889,
+        0,
+        -9.468845
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_58": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -0.8933641741307268,
+        -1.2729971557033863,
+        49.665082155719006
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_58_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -8.007977,
+        0,
+        -24.819405
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_56": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -17.809813225901596,
+        -0.27259529252057746,
+        46.28980099433344
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_56_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -0.222263,
+        0,
+        -3.188164
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        0.512173,
+        5.121733,
+        10.243465
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_floor_texture_copy_18": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -6.706416328367585,
+        -0.14022352941176308,
+        -17.836000927760853
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wall_mounted_torch": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        3.918874,
+        2.062704,
+        -4.823397
+      ],
+      "rotation": [
+        0,
+        -5156.620156,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wall_mounted_torch_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-e3c86b73-709d-421b-8e5e-1cd6c6923445.glb"
+    },
+    "transform": {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        1097.739133,
+        0
+      ],
+      "scaling": [
+        0.999999,
+        1,
+        0.999999
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_wooden_bookshelf": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        20.429253,
+        0.779338,
+        14.904864
+      ],
+      "rotation": [
+        0,
+        5156.620156,
+        0
+      ],
+      "scaling": [
+        4.5,
+        4.5,
+        4.5
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "satanic_stone_statue": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        0.8810241602986267,
+        0.7794713598575669,
+        15.076162058077038
+      ],
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "scaling": [
+        4,
+        4,
+        4
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "satanic_stone_statue_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-9c98a6e4-5475-474d-9167-9542ebc55089.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "occult_summoning_circle": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        0.8894558130008166,
+        0.772635575230229,
+        36.55855876895767
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        0.2,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "occult_summoning_circle_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-033b303a-0755-4000-9741-ca2e9c9d6dbe.glb"
+    },
+    "transform": {
+      "position": [
+        -0.47803,
+        0,
+        0.872025
+      ],
+      "rotation": [
+        0,
+        180,
+        0
+      ],
+      "scaling": [
+        5,
+        5,
+        5
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "ambient_light": {
+    "type": "standard/HemisphericLight",
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 0.001
+    },
+    "clicksSelectParent": false
+  },
+  "wall_mounted_torch_light": {
+    "type": "standard/PointLight",
+    "behaviors": {
+      "FlickerLight": {
+        "range": 15,
+        "flickerSpeed": 10,
+        "baseIntensity": 0.75,
+        "flickerAmount": 0.3
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {
+      "color": [
+        1.0,
+        0.6,
+        0.2
+      ],
+      "intensity": 0.75
+    },
+    "clicksSelectParent": true
+  },
+  "satanic_stone_statue_light": {
+    "type": "standard/PointLight",
+    "behaviors": {
+      "PointLightRange": {
+        "range": 8
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {
+      "color": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "intensity": 0.5
+    },
+    "clicksSelectParent": true
+  },
+  "occult_summoning_circle_light": {
+    "type": "standard/PointLight",
+    "behaviors": {
+      "PointLightRange": {
+        "range": 12
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0.1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {
+      "color": [
+        0.6,
+        0.2,
+        1.0
+      ],
+      "intensity": 1
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_wooden_bookshelf_copy": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        17.57563194514852,
+        0.7389015800115288,
+        16.057661667509393
+      ],
+      "rotation": [
+        0,
+        5156.620156,
+        0
+      ],
+      "scaling": [
+        4.5,
+        4.5,
+        4.5
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wall_mounted_torch_copy": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        21.65922986369296,
+        2.7900161202579454,
+        10.564810624427253
+      ],
+      "rotation": [
+        0,
+        -5156.620156,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wall_mounted_torch_copy_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-e3c86b73-709d-421b-8e5e-1cd6c6923445.glb"
+    },
+    "transform": {
+      "position": [
+        0.247501,
+        0,
+        -0.079178
+      ],
+      "rotation": [
+        0,
+        1383.586313,
+        0
+      ],
+      "scaling": [
+        0.999999,
+        1,
+        0.999999
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "wall_mounted_torch_copy_light": {
+    "type": "standard/PointLight",
+    "behaviors": {
+      "FlickerLight": {
+        "range": 15,
+        "flickerSpeed": 10,
+        "baseIntensity": 0.75,
+        "flickerAmount": 0.3
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {
+      "color": [
+        1,
+        0.6,
+        0.2
+      ],
+      "intensity": 0.75
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_door_with_lock": {
+    "type": "standard/TransformNode",
+    "behaviors": {
+      "InteractableDoor": {
+        "message": "Locked: Find all three keys to escape!",
+        "displayName": "Door"
+      }
+    },
+    "transform": {
+      "scaling": [
+        2,
+        2,
+        2
+      ],
+      "position": [
+        -31.502695,
+        0.752227,
+        15.632541
+      ],
+      "rotation": [
+        0,
+        -5156.620156,
+        0
+      ]
+    },
+    "initialization": {},
+    "clicksSelectParent": false
+  },
+  "medieval_rustic_bed": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        0.8422643831290608,
+        0.853795113479352,
+        -3.066374028005017
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_rustic_bed_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "position": [
+        0,
+        0,
+        0.185338
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        3.5,
+        2.625,
+        3.5
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-46eed05f-b3e6-435f-8655-6be1bf068d4f.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_wooden_bookshelf_copy_2": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -1.7991790927713007,
+        0.8569509679886167,
+        -0.3488420011533373
+      ],
+      "rotation": [
+        0,
+        5156.620156,
+        0
+      ],
+      "scaling": [
+        4.5,
+        4.5,
+        4.5
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_wooden_bookshelf_copy_5": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        20.287738694616735,
+        0.7926007768095857,
+        17.033918927614856
+      ],
+      "rotation": [
+        0,
+        5156.620156,
+        0
+      ],
+      "scaling": [
+        4.5,
+        4.5,
+        4.5
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_bookshelf": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        19.75395730119746,
+        0.7946893934912644,
+        14.022755768626801
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        5,
+        3,
+        2
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_bookshelf_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        -0.237343,
+        0,
+        0.065759
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-a2923265-ec6b-4185-b757-f7b0de2522d9.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_bookshelf_copy": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        17.177483,
+        0.796963,
+        15.598393
+      ],
+      "rotation": [
+        0,
+        5156.620156,
+        0
+      ],
+      "scaling": [
+        5,
+        3,
+        2
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_bookshelf_copy_2": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -3.474126,
+        0.856383,
+        -2.45179
+      ],
+      "rotation": [
+        0,
+        5156.620156,
+        0
+      ],
+      "scaling": [
+        5,
+        3,
+        2
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_bookshelf_copy_3": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -1.0606436203801128,
+        0.7726412080732885,
+        33.87928040554442
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        5,
+        3,
+        2
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_bookshelf_copy_3_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        -0.664153,
+        3e-06,
+        -1.155827
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-a2923265-ec6b-4185-b757-f7b0de2522d9.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_bookshelf_copy_4": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        16.729876,
+        0.795474,
+        15.973265
+      ],
+      "rotation": [
+        0,
+        5156.620156,
+        0
+      ],
+      "scaling": [
+        5,
+        3,
+        2
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_bookshelf_copy_5": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        4.71553,
+        0.856835,
+        -1.752249
+      ],
+      "rotation": [
+        0,
+        5156.620156,
+        0
+      ],
+      "scaling": [
+        5,
+        3,
+        2
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_nightstand": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -1.351224,
+        0.854463,
+        -4.412388
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1.25,
+        1.25,
+        1.25
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_nightstand_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-304a086a-c000-405c-9aca-f8cf8bfa74c2.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_bookshelf_copy_6": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        17.275005201171076,
+        0.7965937096351716,
+        15.508829769094806
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        5,
+        3,
+        2
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_bookshelf_copy_6_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-a2923265-ec6b-4185-b757-f7b0de2522d9.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_bookshelf_copy_7": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        5.06697940704858,
+        0.8558016856967043,
+        -2.5336241805879354
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        5,
+        3,
+        2
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_bookshelf_copy_7_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-a2923265-ec6b-4185-b757-f7b0de2522d9.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_nightstand_copy": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        4.040099440932913,
+        0.7706094861011454,
+        39.727376964782934
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1.25,
+        1.25,
+        1.25
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_nightstand_copy_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        270,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-304a086a-c000-405c-9aca-f8cf8bfa74c2.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_wooden_bed": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -20.840987116503413,
+        0.5811362816131798,
+        40.77972257071424
+      ],
+      "rotation": [
+        0,
+        270,
+        0
+      ],
+      "scaling": [
+        3,
+        3,
+        3
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_wooden_bed_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-8fcc3da8-3890-4972-a6ab-b65bf47fa8c4.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "rustic_crib": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -15.075924069491283,
+        0.5803693913072969,
+        41.3797410151805
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "rustic_crib_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-22871b58-1d6d-4248-9c46-c7fdd3bc1a8f.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_bookshelf_copy_8": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -14.532925,
+        0.580922,
+        37.126789
+      ],
+      "rotation": [
+        0,
+        5156.620156,
+        0
+      ],
+      "scaling": [
+        5,
+        3,
+        2
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_bookshelf_copy_8_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1.038739,
+        1,
+        0.996591
+      ],
+      "position": [
+        6e-06,
+        1e-06,
+        -3e-05
+      ],
+      "rotation": [
+        0,
+        505.255853,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-a2923265-ec6b-4185-b757-f7b0de2522d9.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "broken_old_doll": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -17.116722,
+        0.577775,
+        41.346535
+      ],
+      "rotation": [
+        -3349.638516,
+        -7758.610008,
+        -2472.93996
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "broken_old_doll_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-f5dd4772-a5c2-4aea-9247-02bc9cdee901.glb"
+    },
+    "transform": {
+      "position": [
+        -0.848393,
+        0.092647,
+        -0.015745
+      ],
+      "rotation": [
+        1070.873942,
+        -737.62439,
+        -5921.203254
+      ],
+      "scaling": [
+        1.00001,
+        1.000008,
+        1.000005
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "child_crayon_drawing": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -19.553436,
+        0.581135,
+        36.270359
+      ],
+      "rotation": [
+        4781.326119,
+        -2323.654085,
+        2.301526
+      ],
+      "scaling": [
+        1,
+        0.999999,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "child_crayon_drawing_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-6bd92c80-43e6-49f4-8a8f-4516b61df766.glb"
+    },
+    "transform": {
+      "position": [
+        0.095501,
+        0.109503,
+        -0.351659
+      ],
+      "rotation": [
+        -285.813539,
+        221.622501,
+        10050.161477
+      ],
+      "scaling": [
+        1.000004,
+        0.999992,
+        0.99999
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "child_crayon_drawing_copy": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -18.58388214006948,
+        0.5795978528031682,
+        35.01430166773835
+      ],
+      "rotation": [
+        4781.326119,
+        -2323.654085,
+        2.301526
+      ],
+      "scaling": [
+        1,
+        0.999999,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_bookshelf_copy_9": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -14.333197,
+        0.581374,
+        36.831894
+      ],
+      "rotation": [
+        0,
+        5156.620156,
+        0
+      ],
+      "scaling": [
+        5,
+        3,
+        2
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_bookshelf_copy_9_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        6e-06,
+        0,
+        -0.57336
+      ],
+      "rotation": [
+        0,
+        -6.5e-05,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-a2923265-ec6b-4185-b757-f7b0de2522d9.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "child_crayon_drawing_copy_2": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -17.94386920775643,
+        0.5817122668731187,
+        38.081454038609635
+      ],
+      "rotation": [
+        4781.326119,
+        -2323.654085,
+        2.301526
+      ],
+      "scaling": [
+        1,
+        0.999999,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "child_crayon_drawing_copy_3": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -18.57404954532001,
+        0.580933688779071,
+        37.250425335338115
+      ],
+      "rotation": [
+        4781.326119,
+        -2323.654085,
+        2.301526
+      ],
+      "scaling": [
+        1,
+        0.999999,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "rustic_sink": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        32.2699089910139,
+        0.5030518770217967,
+        37.50619809840329
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "rustic_sink_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        2,
+        1,
+        2
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        270,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-c6c48d13-aaa7-4116-8938-3461b8333ccb.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "rustic_porcelain_bathtub": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        28.727212333749584,
+        0.4968724778108111,
+        40.906511509428675
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "rustic_porcelain_bathtub_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        3,
+        3,
+        3
+      ],
+      "position": [
+        -2.996634,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-d9b73ad4-4b3e-4478-9d5e-417e1b39875f.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "ornate_cracked_mirror": {
+    "type": "standard/TransformNode",
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        32.83638061524551,
+        2.362175415877287,
+        37.407918503325554
+      ],
+      "rotation": [
+        0,
+        276.939758,
+        0
+      ]
+    },
+    "initialization": {},
+    "clicksSelectParent": false
+  },
+  "ornate_cracked_mirror_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1.99999,
+        2,
+        1.99999
+      ],
+      "position": [
+        -1e-06,
+        -0.364783,
+        0.030854
+      ],
+      "rotation": [
+        0,
+        -625.529892,
+        0
+      ]
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-9af35411-20b0-43d6-b58a-8635a2573f75.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "antique_grandfather_clock": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -13.750373582848866,
+        0.8212350919856206,
+        12.579113516695411
+      ],
+      "rotation": [
+        0,
+        270,
+        0
+      ],
+      "scaling": [
+        3.5,
+        3.5,
+        3.5
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "antique_grandfather_clock_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-7c4ab6e1-538f-4e8d-b759-337b97701de6.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "broken_porcelain_toilet": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        28.609554396753488,
+        0.49579689879463373,
+        41.415028345721296
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "broken_porcelain_toilet_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        180,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-6487b9f7-9865-47e4-9237-10b4bc0ef60d.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "abandoned_fireplace": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -17.55575426248549,
+        0.817944531781162,
+        7.283334812220584
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "abandoned_fireplace_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        4,
+        4,
+        4
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-57eb6588-c277-4178-8548-490c56268243.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "old_worn_red_carpet": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -17.696155834503028,
+        0.8119770681781802,
+        15.529515606667509
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "old_worn_red_carpet_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-86c12ee6-e3c9-43f8-b7fa-dc2b86de6cd0.glb"
+    },
+    "transform": {
+      "position": [
+        0,
+        0.073277,
+        0
+      ],
+      "rotation": [
+        0,
+        4247.975756,
+        0
+      ],
+      "scaling": [
+        10,
+        1,
+        7.000001
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_door_with_lock_copy": {
+    "type": "standard/TransformNode",
+    "behaviors": {
+      "InteractableDoor": {
+        "message": "Locked: Find all three keys to escape!",
+        "displayName": "Door"
+      }
+    },
+    "transform": {
+      "scaling": [
+        2,
+        2,
+        2
+      ],
+      "position": [
+        -31.025108,
+        0.775155,
+        14.770446
+      ],
+      "rotation": [
+        0,
+        -8612.058325,
+        0
+      ]
+    },
+    "initialization": {},
+    "clicksSelectParent": false
+  },
+  "wooden_door_with_lock_copy_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-cce8ad80-3d59-454c-a9d6-2300396ec6c3.glb"
+    },
+    "transform": {
+      "position": [
+        -0.276677,
+        0,
+        0.416197
+      ],
+      "rotation": [
+        0,
+        3526.910218,
+        0
+      ],
+      "scaling": [
+        1.00001,
+        1,
+        1.00001
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "old_worn_red_carpet_copy": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        18.956088527405996,
+        0.6972171123068378,
+        28.437478285386273
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "old_worn_red_carpet_copy_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-86c12ee6-e3c9-43f8-b7fa-dc2b86de6cd0.glb"
+    },
+    "transform": {
+      "position": [
+        0,
+        0.073277,
+        0
+      ],
+      "rotation": [
+        0,
+        -4063.877611,
+        0
+      ],
+      "scaling": [
+        9.999996,
+        1,
+        6.999996
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_bookshelf_copy_10": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        22.192432551617664,
+        0.7950405206704367,
+        17.30269580772616
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        5,
+        3,
+        2
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_bookshelf_copy_10_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        0.227364
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-a2923265-ec6b-4185-b757-f7b0de2522d9.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_bookshelf_copy_11": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        22.11816046237453,
+        0.795076987554669,
+        12.668117594062206
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "scaling": [
+        5,
+        3,
+        2
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_bookshelf_copy_11_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        0.276718
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-a2923265-ec6b-4185-b757-f7b0de2522d9.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_bookshelf_copy_12": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        18.67159985770092,
+        0.7935345532876745,
+        11.956225725514937
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        5,
+        3,
+        2
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_bookshelf_copy_12_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        -0.420057,
+        0,
+        -0.516752
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-a2923265-ec6b-4185-b757-f7b0de2522d9.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "old_red_sofa": {
+    "type": "standard/TransformNode",
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        -16.921580974096344,
+        0.8934484596479599,
+        18.75167405665515
+      ],
+      "rotation": [
+        0,
+        235.158822,
+        0
+      ]
+    },
+    "initialization": {},
+    "clicksSelectParent": false
+  },
+  "old_red_sofa_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        3.000001,
+        3,
+        3.000001
+      ],
+      "position": [
+        -5.324639,
+        0,
+        4.89433
+      ],
+      "rotation": [
+        0,
+        -3270.715596,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-99ba8a31-b0f0-46cb-b529-0c54af5a02e6.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_wooden_table": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -13.006951211773481,
+        0.8158097025613031,
+        28.871583119973053
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_wooden_table_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        4,
+        4,
+        4
+      ],
+      "position": [
+        -0.252767,
+        0,
+        1.568535
+      ],
+      "rotation": [
+        0,
+        2923.711482,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-7dc08c75-07b8-4a7f-b0b9-6caa9983a551.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_wooden_table_copy": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -8.602543089342209,
+        0.8115868696927944,
+        32.16059707905342
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_wooden_table_copy_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-7dc08c75-07b8-4a7f-b0b9-6caa9983a551.glb"
+    },
+    "transform": {
+      "position": [
+        3.437001,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        -717.238084,
+        0
+      ],
+      "scaling": [
+        4,
+        4,
+        4
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_wooden_table_copy_2": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -6.406225506951101,
+        0.8150755237011751,
+        28.587137144849024
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_wooden_table_copy_2_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-7dc08c75-07b8-4a7f-b0b9-6caa9983a551.glb"
+    },
+    "transform": {
+      "position": [
+        -2.084486,
+        0,
+        -0.858635
+      ],
+      "rotation": [
+        0,
+        -989.48292,
+        0
+      ],
+      "scaling": [
+        4.000001,
+        4,
+        4.000001
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_wooden_table_copy_3": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -1.744713771069958,
+        0.7932525724832011,
+        27.63749691519481
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_wooden_table_copy_3_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-7dc08c75-07b8-4a7f-b0b9-6caa9983a551.glb"
+    },
+    "transform": {
+      "position": [
+        0,
+        0.444403,
+        1.622152
+      ],
+      "rotation": [
+        -3915.128428,
+        0,
+        0
+      ],
+      "scaling": [
+        4,
+        4.000003,
+        4.000003
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "old_red_sofa_copy": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -19.414122204650894,
+        0.8068537313411,
+        21.235302901195524
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "old_red_sofa_copy_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        3,
+        3,
+        3
+      ],
+      "position": [
+        -1.224682,
+        0,
+        -1.38036
+      ],
+      "rotation": [
+        0,
+        7129.548337,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-99ba8a31-b0f0-46cb-b529-0c54af5a02e6.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "medieval_nightstand_copy_2": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        32.35844425237069,
+        0.5011722675290233,
+        34.706807540061526
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1.25,
+        1.25,
+        1.25
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "medieval_nightstand_copy_2_mesh": {
+    "type": "standard/CustomMesh",
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        -0.423518,
+        0,
+        -0.438114
+      ],
+      "rotation": [
+        0,
+        -1168.686704,
+        0
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-304a086a-c000-405c-9aca-f8cf8bfa74c2.glb"
+    },
+    "clicksSelectParent": true
+  },
+  "wall_mounted_torch_copy_2": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -22.435257380720515,
+        2.9428519139208644,
+        18.75618342544757
+      ],
+      "rotation": [
+        0,
+        -5156.620156,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wall_mounted_torch_copy_2_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-e3c86b73-709d-421b-8e5e-1cd6c6923445.glb"
+    },
+    "transform": {
+      "position": [
+        -0.055122,
+        0,
+        -0.24246
+      ],
+      "rotation": [
+        0,
+        5890.479939,
+        0
+      ],
+      "scaling": [
+        0.999998,
+        1,
+        0.999998
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "wall_mounted_torch_copy_2_light": {
+    "type": "standard/PointLight",
+    "behaviors": {
+      "FlickerLight": {
+        "range": 15,
+        "flickerSpeed": 10,
+        "baseIntensity": 0.75,
+        "flickerAmount": 0.3
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {
+      "color": [
+        1,
+        0.6,
+        0.2
+      ],
+      "intensity": 0.75
+    },
+    "clicksSelectParent": true
+  },
+  "wall_mounted_torch_copy_3": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -22.329417256796702,
+        3.0407173262248612,
+        13.124499136655269
+      ],
+      "rotation": [
+        0,
+        -5156.620156,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wall_mounted_torch_copy_3_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-e3c86b73-709d-421b-8e5e-1cd6c6923445.glb"
+    },
+    "transform": {
+      "position": [
+        -0.090873,
+        0,
+        -0.284073
+      ],
+      "rotation": [
+        0,
+        7113.714124,
+        0
+      ],
+      "scaling": [
+        0.999998,
+        1,
+        0.999998
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "wall_mounted_torch_copy_3_light": {
+    "type": "standard/PointLight",
+    "behaviors": {
+      "FlickerLight": {
+        "range": 15,
+        "flickerSpeed": 10,
+        "baseIntensity": 0.75,
+        "flickerAmount": 0.3
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {
+      "color": [
+        1,
+        0.6,
+        0.2
+      ],
+      "intensity": 0.75
+    },
+    "clicksSelectParent": true
+  },
+  "wall_mounted_torch_copy_4": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -22.372047282365646,
+        3.0017898811268147,
+        29.812321323953114
+      ],
+      "rotation": [
+        0,
+        -5156.620156,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wall_mounted_torch_copy_4_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-e3c86b73-709d-421b-8e5e-1cd6c6923445.glb"
+    },
+    "transform": {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        1097.739133,
+        0
+      ],
+      "scaling": [
+        0.999999,
+        1,
+        0.999999
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "wall_mounted_torch_copy_4_light": {
+    "type": "standard/PointLight",
+    "behaviors": {
+      "FlickerLight": {
+        "range": 15,
+        "flickerSpeed": 10,
+        "baseIntensity": 0.75,
+        "flickerAmount": 0.3
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {
+      "color": [
+        1,
+        0.6,
+        0.2
+      ],
+      "intensity": 0.75
+    },
+    "clicksSelectParent": true
+  },
+  "wall_mounted_torch_copy_5": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        -6.678304317846277,
+        2.801773777479263,
+        25.078364523160083
+      ],
+      "rotation": [
+        0,
+        -5156.620156,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wall_mounted_torch_copy_5_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-e3c86b73-709d-421b-8e5e-1cd6c6923445.glb"
+    },
+    "transform": {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        1097.739133,
+        0
+      ],
+      "scaling": [
+        0.999999,
+        1,
+        0.999999
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "wall_mounted_torch_copy_5_light": {
+    "type": "standard/PointLight",
+    "behaviors": {
+      "FlickerLight": {
+        "range": 15,
+        "flickerSpeed": 10,
+        "baseIntensity": 0.75,
+        "flickerAmount": 0.3
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {
+      "color": [
+        1,
+        0.6,
+        0.2
+      ],
+      "intensity": 0.75
+    },
+    "clicksSelectParent": true
+  },
+  "wall_mounted_torch_copy_6": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        18.486282270588955,
+        2.894233771610635,
+        37.59253859838266
+      ],
+      "rotation": [
+        0,
+        -5156.620156,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wall_mounted_torch_copy_6_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-e3c86b73-709d-421b-8e5e-1cd6c6923445.glb"
+    },
+    "transform": {
+      "position": [
+        -0.114218,
+        0,
+        0.105443
+      ],
+      "rotation": [
+        0,
+        -7866.170296,
+        0
+      ],
+      "scaling": [
+        0.999999,
+        1,
+        0.999999
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "wall_mounted_torch_copy_6_light": {
+    "type": "standard/PointLight",
+    "behaviors": {
+      "FlickerLight": {
+        "range": 15,
+        "flickerSpeed": 10,
+        "baseIntensity": 0.75,
+        "flickerAmount": 0.3
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {
+      "color": [
+        1,
+        0.6,
+        0.2
+      ],
+      "intensity": 0.75
+    },
+    "clicksSelectParent": true
+  },
+  "golden_key": {
+    "type": "standard/TransformNode",
+    "behaviors": {
+      "CollectibleKey": {
+        "keyId": "golden_key_1",
+        "displayName": "Golden Key"
+      }
+    },
+    "initialization": {},
+    "transform": {
+      "position": [
+        -17.860136,
+        0.810151,
+        39.962471
+      ],
+      "rotation": [
+        -81.89,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "golden_key_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-d3eb18e4-7afa-44b5-858f-84e955521986.glb"
+    },
+    "transform": {
+      "position": [
+        0.099493,
+        0.303853,
+        0.002266
+      ],
+      "rotation": [
+        -23.240499,
+        -145.627366,
+        -1038.870664
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "golden_key_copy": {
+    "type": "standard/TransformNode",
+    "behaviors": {
+      "CollectibleKey": {
+        "keyId": "golden_key_2",
+        "displayName": "Golden Key"
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        20.88377532506574,
+        0.7938247853985612,
+        11.867278822989675
+      ],
+      "rotation": [
+        -81.89,
+        0,
+        0
+      ]
+    },
+    "initialization": {},
+    "clicksSelectParent": false
+  },
+  "golden_key_copy_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-d3eb18e4-7afa-44b5-858f-84e955521986.glb"
+    },
+    "transform": {
+      "position": [
+        0.099493,
+        0.303853,
+        0.002266
+      ],
+      "rotation": [
+        -23.240499,
+        -145.627366,
+        -1038.870664
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "golden_key_copy_2": {
+    "type": "standard/TransformNode",
+    "behaviors": {
+      "CollectibleKey": {
+        "keyId": "golden_key_3",
+        "displayName": "Golden Key"
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        25.30983037603078,
+        0.5003292047196339,
+        33.92474765123948
+      ],
+      "rotation": [
+        -81.89,
+        0,
+        0
+      ]
+    },
+    "initialization": {},
+    "clicksSelectParent": false
+  },
+  "golden_key_copy_2_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-d3eb18e4-7afa-44b5-858f-84e955521986.glb"
+    },
+    "transform": {
+      "position": [
+        0.099493,
+        0.303853,
+        0.002266
+      ],
+      "rotation": [
+        -23.240499,
+        -145.627366,
+        -1038.870664
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "golden_key_light": {
+    "type": "standard/PointLight",
+    "behaviors": {
+      "PointLightRange": {
+        "range": 5
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {
+      "color": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "intensity": 0.05
+    },
+    "clicksSelectParent": true
+  },
+  "golden_key_copy_light": {
+    "type": "standard/PointLight",
+    "behaviors": {
+      "PointLightRange": {
+        "range": 5
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {
+      "color": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "intensity": 0.05
+    },
+    "clicksSelectParent": true
+  },
+  "golden_key_copy_2_light": {
+    "type": "standard/PointLight",
+    "behaviors": {
+      "PointLightRange": {
+        "range": 5
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {
+      "color": [
+        1.0,
+        1.0,
+        0.0
+      ],
+      "intensity": 0.05
+    },
+    "clicksSelectParent": true
+  },
+  "ornate_portrait_painting": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        14.465927195089293,
+        3.1504395465951447,
+        28.09742104617612
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "ornate_portrait_painting_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-ee97e37f-3afe-408b-a987-1a1275b8e0fa.glb"
+    },
+    "transform": {
+      "position": [
+        0,
+        -0.866838,
+        0
+      ],
+      "rotation": [
+        0,
+        5138.878763,
+        0
+      ],
+      "scaling": [
+        3,
+        3,
+        1
+      ]
+    },
+    "clicksSelectParent": true
+  },
+  "uncanny_hooded_figure": {
+    "type": "standard/TransformNode",
+    "behaviors": {
+      "EnemyFigure": {
+        "spawnMaxTime": 5000,
+        "spawnMinTime": 5000,
+        "playerEntityId": "player",
+        "visibleDuration": 4000
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        14.31089,
+        1.19,
+        14.61938
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {},
+    "clicksSelectParent": false
+  },
+  "uncanny_hooded_figure_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_character_model-5b1d94f4-3de7-4785-a0b5-76c782ed019c.glb"
+    },
+    "transform": {
+      "position": [
+        -13.456376,
+        0,
+        22.282627
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        2.5,
+        2.5,
+        2.5
+      ]
+    },
+    "behaviors": {
+      "AnimationController": {}
+    },
+    "clicksSelectParent": true
+  },
+  "uncanny_hooded_figure_light": {
+    "type": "standard/PointLight",
+    "behaviors": {
+      "PointLightRange": {
+        "range": 10
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {
+      "color": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "intensity": 2.0
+    },
+    "clicksSelectParent": true
+  },
+  "wooden_wall_texture_copy_21": {
+    "type": "standard/TransformNode",
+    "initialization": {},
+    "transform": {
+      "position": [
+        36.6473085784219,
+        -0.3456923778630454,
+        16.755717475541577
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        1,
+        1,
+        1
+      ]
+    },
+    "clicksSelectParent": false
+  },
+  "wooden_wall_texture_copy_21_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+    },
+    "transform": {
+      "position": [
+        -2.369133,
+        4.507195,
+        -0.553213
+      ],
+      "rotation": [
+        0,
+        0,
+        90
+      ],
+      "scaling": [
+        0.15,
+        75,
+        75
+      ]
+    },
+    "physicsBody": {
+      "motionType": "STATIC",
+      "massProperties": {}
+    },
+    "physicsShape": {
+      "type": "CONVEX"
+    },
+    "clicksSelectParent": true
+  },
+  "uncanny_hooded_figure_copy": {
+    "type": "standard/TransformNode",
+    "behaviors": {
+      "EnemyFigure": {
+        "spawnMaxTime": 5000,
+        "spawnMinTime": 15000,
+        "playerEntityId": "player",
+        "visibleDuration": 4000
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0.39625535587172406,
+        0.7983013027762951,
+        37.284507167162694
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {},
+    "clicksSelectParent": false
+  },
+  "uncanny_hooded_figure_copy_mesh": {
+    "type": "standard/CustomMesh",
+    "initialization": {
+      "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_character_model-5b1d94f4-3de7-4785-a0b5-76c782ed019c.glb"
+    },
+    "transform": {
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scaling": [
+        2.5,
+        2.5,
+        2.5
+      ]
+    },
+    "behaviors": {
+      "AnimationController": {}
+    },
+    "clicksSelectParent": true
+  },
+  "uncanny_hooded_figure_copy_light": {
+    "type": "standard/PointLight",
+    "behaviors": {
+      "PointLightRange": {
+        "range": 10
+      }
+    },
+    "transform": {
+      "scaling": [
+        1,
+        1,
+        1
+      ],
+      "position": [
+        0,
+        1.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ]
+    },
+    "initialization": {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "intensity": 0.3
+    },
+    "clicksSelectParent": true
+  }
+}
