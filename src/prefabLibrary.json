@@ -1,0 +1,1620 @@
+{
+  "ghost": {
+    "metadata": {
+      "summary": "Ghost entity.",
+      "whenToUse": "Use for ghost entities."
+    },
+    "entities": {
+      "root": {}
+    },
+    "properties": {
+      "root": {
+        "type": "standard/CustomMesh",
+        "initialization": {
+          "url": "https://spatio-generations.s3.amazonaws.com/misc/ghostSway.glb"
+        },
+        "transform": {
+          "position": [
+            -0.5,
+            -0.1,
+            -10.5
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "clicksSelectParent": null,
+        "animation": true,
+        "animated": true,
+        "material_type_for_sfx": null,
+        "object_type_for_sfx": null,
+        "behaviors": {
+          "AnimationController": {}
+        }
+      }
+    }
+  },
+  "FirstPersonPlayer": {
+    "metadata": {
+      "summary": "First-person player controller with FirstPersonCamera for camera, MovementController for movement, and HoldableSwitcher for holdable items. Uses a capsule mesh for the player body.",
+      "whenToUse": "Use for first-person games."
+    },
+    "entities": {
+      "root": {
+        "mesh": {},
+        "camera": {
+          "holdables_container": {}
+        },
+        "player_light": {}
+      }
+    },
+    "properties": {
+      "root": {
+        "type": "standard/TransformNode",
+        "behaviors": {
+          "HoldableSwitcher": {
+            "holdablesContainerEntityId": "<prefabLocalEntityReference:holdables_container>"
+          },
+          "MovementController": {
+            "runSpeed": 6,
+            "walkSpeed": 3,
+            "jumpHeight": 0.01,
+            "capsuleHeight": 1.6,
+            "capsuleRadius": 0.5
+          }
+        },
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "initialization": {},
+        "clicksSelectParent": false
+      },
+      "mesh": {
+        "type": "standard/Capsule",
+        "initialization": {
+          "height": 1.6,
+          "radius": 0.5
+        },
+        "transform": {
+          "position": [
+            0,
+            0.8,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "clicksSelectParent": true
+      },
+      "camera": {
+        "type": "standard/UniversalCamera",
+        "initialization": {
+          "fov": 70
+        },
+        "transform": {
+          "position": [
+            0,
+            1.2,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "behaviors": {
+          "FirstPersonCamera": {
+            "mouseSensitivity": 2
+          }
+        },
+        "clicksSelectParent": false
+      },
+      "holdables_container": {
+        "type": "standard/TransformNode",
+        "initialization": {},
+        "transform": {
+          "position": [
+            0.2,
+            -0.3,
+            -0.2
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "clicksSelectParent": true
+      },
+      "player_light": {
+        "type": "standard/PointLight",
+        "behaviors": {
+          "PointLightRange": {
+            "range": 10
+          }
+        },
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            1.0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "initialization": {
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "intensity": 0.4
+        },
+        "clicksSelectParent": true
+      }
+    }
+  },
+  "ThirdPersonPlayer": {
+    "metadata": {
+      "summary": "Third-person player controller with ThirdPersonCamera for camera, MovementController for movement, and HoldableSwitcher for holdable items. Requires a meshUrl for the character mesh, and uses AnimationController and IKController for animation.",
+      "whenToUse": "Use for third-person games."
+    },
+    "entities": {
+      "root": {
+        "mesh": {},
+        "camera": {},
+        "pivot": {
+          "left_pole_target": {},
+          "right_pole_target": {},
+          "holdables_container": {}
+        }
+      }
+    },
+    "properties": {
+      "root": {
+        "type": "standard/TransformNode",
+        "initialization": {},
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "behaviors": {
+          "MovementController": {
+            "walkSpeed": 3,
+            "runSpeed": 6,
+            "jumpHeight": 2,
+            "capsuleHeight": 2,
+            "capsuleRadius": 0.5
+          },
+          "HoldableSwitcher": {
+            "holdablesContainerEntityId": "<prefabLocalEntityReference:holdables_container>",
+            "meshEntityId": "<prefabLocalEntityReference:mesh>"
+          }
+        },
+        "clicksSelectParent": false
+      },
+      "mesh": {
+        "type": "standard/CustomMesh",
+        "initialization": {
+          "url": "<prefabVariable:meshUrl>"
+        },
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "scaling": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "behaviors": {
+          "AnimationController": {},
+          "IKController": {
+            "leftPoleTargetEntityId": "<prefabLocalEntityReference:left_pole_target>",
+            "rightPoleTargetEntityId": "<prefabLocalEntityReference:right_pole_target>",
+            "leftHandTargetEntityId": "",
+            "rightHandTargetEntityId": ""
+          }
+        },
+        "clicksSelectParent": true
+      },
+      "camera": {
+        "type": "standard/UniversalCamera",
+        "initialization": {
+          "fov": 70
+        },
+        "transform": {
+          "position": [
+            -1,
+            2,
+            4
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "behaviors": {
+          "ThirdPersonCamera": {
+            "mouseSensitivity": 2,
+            "pivotEntityId": "<prefabLocalEntityReference:pivot>"
+          }
+        },
+        "clicksSelectParent": false
+      },
+      "pivot": {
+        "type": "standard/TransformNode",
+        "initialization": {},
+        "transform": {
+          "position": [
+            0,
+            1.6,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "clicksSelectParent": false
+      },
+      "left_pole_target": {
+        "type": "standard/TransformNode",
+        "initialization": {},
+        "transform": {
+          "position": [
+            -0.5,
+            -0.3,
+            -0.5
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "clicksSelectParent": false
+      },
+      "right_pole_target": {
+        "type": "standard/TransformNode",
+        "initialization": {},
+        "transform": {
+          "position": [
+            0.5,
+            -0.3,
+            -0.5
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "clicksSelectParent": false
+      },
+      "holdables_container": {
+        "type": "standard/TransformNode",
+        "initialization": {},
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "clicksSelectParent": true
+      }
+    }
+  },
+  "NPC": {
+    "metadata": {
+      "summary": "Non-playable character. Requires `meshUrl` for the character mesh, `displayName` for the name shown above their head, and `dialogueTreeKey` for the dialogue tree that is played when interacted with. Uses AnimationController to play a default idle animation.",
+      "whenToUse": "Use for NPC."
+    },
+    "entities": {
+      "root": {
+        "mesh": {}
+      }
+    },
+    "properties": {
+      "root": {
+        "type": "standard/TransformNode",
+        "initialization": {},
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "clicksSelectParent": false
+      },
+      "mesh": {
+        "type": "standard/CustomMesh",
+        "initialization": {
+          "url": "<prefabVariable:meshUrl>"
+        },
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            180,
+            0
+          ],
+          "scaling": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "behaviors": {
+          "AnimationController": {},
+          "InteractableNPC": {
+            "uiOffsetX": 0,
+            "uiOffsetY": 2.5,
+            "uiOffsetZ": 0,
+            "displayName": "<prefabVariable:displayName>",
+            "dialogueTreeKey": "<prefabVariable:dialogueTreeKey>"
+          }
+        },
+        "clicksSelectParent": true
+      }
+    }
+  },
+  "Revolver": {
+    "metadata": {
+      "summary": "Revolver HoldableItem.",
+      "whenToUse": "Do not attach to player directly. This prefab should be linked to an item in items.json, and will be automatically equipped if player selects the item."
+    },
+    "entities": {
+      "root": {
+        "mesh": {},
+        "right_hand": {},
+        "muzzle": {}
+      }
+    },
+    "properties": {
+      "root": {
+        "type": "standard/TransformNode",
+        "initialization": {},
+        "transform": {
+          "position": [
+            0.2,
+            0,
+            -0.6
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "behaviors": {
+          "HoldableItem": {
+            "leftHandEntityId": "",
+            "rightHandEntityId": "<prefabLocalEntityReference:right_hand>"
+          },
+          "HoldableFirearm": {
+            "muzzleEntityId": "<prefabLocalEntityReference:muzzle>",
+            "autoFire": false,
+            "fireDelay": 0.5
+          }
+        },
+        "clicksSelectParent": false
+      },
+      "mesh": {
+        "type": "standard/CustomMesh",
+        "initialization": {
+          "url": "https://spatio-generations.s3.us-east-1.amazonaws.com/misc/revolver.glb"
+        },
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            0.4,
+            0.4,
+            0.4
+          ]
+        },
+        "clicksSelectParent": true
+      },
+      "right_hand": {
+        "type": "standard/TransformNode",
+        "initialization": {},
+        "transform": {
+          "position": [
+            0,
+            -0.05,
+            0.1
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "clicksSelectParent": false
+      },
+      "muzzle": {
+        "type": "standard/TransformNode",
+        "initialization": {},
+        "transform": {
+          "position": [
+            0,
+            0.15,
+            -0.2
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "clicksSelectParent": false
+      }
+    }
+  },
+  "AK47": {
+    "metadata": {
+      "summary": "AK-47 HoldableItem.",
+      "whenToUse": "Do not attach to player directly. This prefab should be linked to an item in items.json, and will be automatically equipped if player selects the item."
+    },
+    "entities": {
+      "root": {
+        "mesh": {},
+        "left_hand": {},
+        "right_hand": {},
+        "muzzle": {}
+      }
+    },
+    "properties": {
+      "root": {
+        "type": "standard/TransformNode",
+        "initialization": {},
+        "transform": {
+          "position": [
+            0.2,
+            0,
+            -0.5
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "behaviors": {
+          "HoldableItem": {
+            "leftHandEntityId": "<prefabLocalEntityReference:left_hand>",
+            "rightHandEntityId": "<prefabLocalEntityReference:right_hand>"
+          },
+          "HoldableFirearm": {
+            "muzzleEntityId": "<prefabLocalEntityReference:muzzle>",
+            "autoFire": true,
+            "fireDelay": 0.1
+          }
+        },
+        "clicksSelectParent": false
+      },
+      "mesh": {
+        "type": "standard/CustomMesh",
+        "initialization": {
+          "url": "https://spatio-generations.s3.us-east-1.amazonaws.com/misc/ak47.glb"
+        },
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            90,
+            180,
+            90
+          ],
+          "scaling": [
+            0.8,
+            0.8,
+            0.8
+          ]
+        },
+        "clicksSelectParent": true
+      },
+      "left_hand": {
+        "type": "standard/TransformNode",
+        "initialization": {},
+        "transform": {
+          "position": [
+            0,
+            -0.05,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "clicksSelectParent": false
+      },
+      "right_hand": {
+        "type": "standard/TransformNode",
+        "initialization": {},
+        "transform": {
+          "position": [
+            0,
+            -0.05,
+            0.2
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "clicksSelectParent": false
+      },
+      "muzzle": {
+        "type": "standard/TransformNode",
+        "initialization": {},
+        "transform": {
+          "position": [
+            -0.05,
+            0.1,
+            -0.35
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "clicksSelectParent": false
+      }
+    }
+  },
+  "WoodenFloor": {
+    "metadata": {
+      "summary": "A wooden floor tile with physics collision",
+      "whenToUse": "Use this prefab when you want to place wooden floor tiles that the player can walk on"
+    },
+    "entities": {
+      "root": {
+        "mesh": {}
+      }
+    },
+    "properties": {
+      "root": {
+        "type": "standard/TransformNode",
+        "initialization": {},
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "clicksSelectParent": false
+      },
+      "mesh": {
+        "type": "standard/CustomMesh",
+        "initialization": {
+          "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-5f711785-54c3-48d6-8dab-81de0f93032c.glb"
+        },
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            10,
+            1,
+            10
+          ]
+        },
+        "physicsBody": {
+          "motionType": "STATIC",
+          "massProperties": {}
+        },
+        "physicsShape": {
+          "type": "CONVEX"
+        },
+        "clicksSelectParent": true
+      }
+    }
+  },
+  "WoodenWall": {
+    "metadata": {
+      "summary": "A wooden wall with physics collision",
+      "whenToUse": "Use this prefab when you want to place wooden walls that block the player"
+    },
+    "entities": {
+      "root": {
+        "mesh": {}
+      }
+    },
+    "properties": {
+      "root": {
+        "type": "standard/TransformNode",
+        "initialization": {},
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            1,
+            1,
+            1
+          ]
+        },
+        "clicksSelectParent": false
+      },
+      "mesh": {
+        "type": "standard/CustomMesh",
+        "initialization": {
+          "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-2504b8f9-2b8a-40df-98db-34135c8bc88f.glb"
+        },
+        "transform": {
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "scaling": [
+            0.512173,
+            5.121733,
+            10.243465
+          ]
+        },
+        "physicsBody": {
+          "motionType": "STATIC",
+          "massProperties": {}
+        },
+        "physicsShape": {
+          "type": "CONVEX"
+        },
+        "clicksSelectParent": true
+      }
+    }
+  },
+  "MedievalBed": {
+    "metadata": {
+      "summary": "A medieval bed with physics collision",
+      "whenToUse": "Use this prefab to place medieval beds that players can collide with"
+    },
+    "entities": {
+      "root": {
+        "mesh": {}
+      }
+    },
+    "properties": {
+      "mesh": {
+        "type": "standard/CustomMesh",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "physicsBody": {
+          "motionType": "STATIC",
+          "massProperties": {}
+        },
+        "physicsShape": {
+          "type": "CONVEX"
+        },
+        "initialization": {
+          "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-ebc59b57-227c-4e03-b741-97792c770576.glb"
+        },
+        "clicksSelectParent": true
+      },
+      "root": {
+        "type": "standard/TransformNode",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "initialization": {},
+        "clicksSelectParent": false
+      }
+    }
+  },
+  "MedievalWoodenBookshelf": {
+    "metadata": {
+      "summary": "A medieval wooden bookshelf with physics collision",
+      "whenToUse": "Use this prefab to place bookshelves that players can collide with"
+    },
+    "entities": {
+      "root": {
+        "mesh": {}
+      }
+    },
+    "properties": {
+      "mesh": {
+        "type": "standard/CustomMesh",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "physicsBody": {
+          "motionType": "STATIC",
+          "massProperties": {}
+        },
+        "physicsShape": {
+          "type": "CONVEX"
+        },
+        "initialization": {
+          "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-1ed88fcd-5cf1-4fa9-ab14-0afcea1d4772.glb"
+        },
+        "clicksSelectParent": true
+      },
+      "root": {
+        "type": "standard/TransformNode",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            5156.620156,
+            0
+          ]
+        },
+        "initialization": {},
+        "clicksSelectParent": false
+      }
+    }
+  },
+  "SatanicStoneStatue": {
+    "metadata": {
+      "summary": "A satanic stone statue with physics collision",
+      "whenToUse": "Use this prefab to place stone statues that players can collide with"
+    },
+    "entities": {
+      "root": {
+        "mesh": {},
+        "statue_light": {}
+      }
+    },
+    "properties": {
+      "mesh": {
+        "type": "standard/CustomMesh",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "physicsBody": {
+          "motionType": "STATIC",
+          "massProperties": {}
+        },
+        "physicsShape": {
+          "type": "CONVEX"
+        },
+        "initialization": {
+          "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-9c98a6e4-5475-474d-9167-9542ebc55089.glb"
+        },
+        "clicksSelectParent": true
+      },
+      "root": {
+        "type": "standard/TransformNode",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "initialization": {},
+        "clicksSelectParent": false
+      },
+      "statue_light": {
+        "type": "standard/PointLight",
+        "behaviors": {
+          "PointLightRange": {
+            "range": 8
+          }
+        },
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "initialization": {
+          "color": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "intensity": 0.5
+        },
+        "clicksSelectParent": true
+      }
+    }
+  },
+  "WallMountedTorch": {
+    "metadata": {
+      "summary": "A wall mounted torch without physics collision",
+      "whenToUse": "Use this prefab to place decorative torches that players can walk through"
+    },
+    "entities": {
+      "root": {
+        "mesh": {},
+        "torch_light": {}
+      }
+    },
+    "properties": {
+      "mesh": {
+        "type": "standard/CustomMesh",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "initialization": {
+          "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-e3c86b73-709d-421b-8e5e-1cd6c6923445.glb"
+        },
+        "clicksSelectParent": true
+      },
+      "root": {
+        "type": "standard/TransformNode",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            -5156.620156,
+            0
+          ]
+        },
+        "initialization": {},
+        "clicksSelectParent": false
+      },
+      "torch_light": {
+        "type": "standard/PointLight",
+        "behaviors": {
+          "FlickerLight": {
+            "range": 15,
+            "flickerSpeed": 10,
+            "baseIntensity": 0.75,
+            "flickerAmount": 0.3
+          }
+        },
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "initialization": {
+          "color": [
+            1.0,
+            0.6,
+            0.2
+          ],
+          "intensity": 0.75
+        },
+        "clicksSelectParent": true
+      }
+    }
+  },
+  "OccultSummoningCircle": {
+    "metadata": {
+      "summary": "An occult summoning circle without physics collision",
+      "whenToUse": "Use this prefab to place decorative summoning circles on the ground that players can walk through"
+    },
+    "entities": {
+      "root": {
+        "mesh": {},
+        "circle_light": {}
+      }
+    },
+    "properties": {
+      "mesh": {
+        "type": "standard/CustomMesh",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "initialization": {
+          "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-033b303a-0755-4000-9741-ca2e9c9d6dbe.glb"
+        },
+        "clicksSelectParent": true
+      },
+      "root": {
+        "type": "standard/TransformNode",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "initialization": {},
+        "clicksSelectParent": false
+      },
+      "circle_light": {
+        "type": "standard/PointLight",
+        "behaviors": {
+          "PointLightRange": {
+            "range": 12
+          }
+        },
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0.1,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "initialization": {
+          "color": [
+            0.6,
+            0.2,
+            1.0
+          ],
+          "intensity": 1
+        },
+        "clicksSelectParent": true
+      }
+    }
+  },
+  "MedievalBed2": {
+    "metadata": {
+      "summary": "A medieval bed with physics collision",
+      "whenToUse": "Use this prefab to place medieval beds that players can collide with"
+    },
+    "entities": {
+      "root": {
+        "mesh": {}
+      }
+    },
+    "properties": {
+      "mesh": {
+        "type": "standard/CustomMesh",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "physicsBody": {
+          "motionType": "STATIC",
+          "massProperties": {}
+        },
+        "physicsShape": {
+          "type": "CONVEX"
+        },
+        "initialization": {
+          "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-ece4e60c-5371-4a0f-9406-0a08d4d5322d.glb"
+        },
+        "clicksSelectParent": true
+      },
+      "root": {
+        "type": "standard/TransformNode",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "initialization": {},
+        "clicksSelectParent": false
+      }
+    }
+  },
+  "MedievalWoodenTable": {
+    "metadata": {
+      "summary": "A medieval wooden table with physics collision",
+      "whenToUse": "Use this prefab to place tables that players can collide with"
+    },
+    "entities": {
+      "root": {
+        "mesh": {}
+      }
+    },
+    "properties": {
+      "mesh": {
+        "type": "standard/CustomMesh",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "physicsBody": {
+          "motionType": "STATIC",
+          "massProperties": {}
+        },
+        "physicsShape": {
+          "type": "CONVEX"
+        },
+        "initialization": {
+          "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-01fccc38-fdf5-46c0-b810-13c2e21ce97f.glb"
+        },
+        "clicksSelectParent": true
+      },
+      "root": {
+        "type": "standard/TransformNode",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "initialization": {},
+        "clicksSelectParent": false
+      }
+    }
+  },
+  "StickFigureDrawing": {
+    "metadata": {
+      "summary": "A stick figure drawing with physics collision",
+      "whenToUse": "Use this prefab to place stick figure drawings that players can collide with"
+    },
+    "entities": {
+      "root": {
+        "mesh": {}
+      }
+    },
+    "properties": {
+      "mesh": {
+        "type": "standard/CustomMesh",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "physicsBody": {
+          "motionType": "STATIC",
+          "massProperties": {}
+        },
+        "physicsShape": {
+          "type": "CONVEX"
+        },
+        "initialization": {
+          "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-12c08c9c-300b-4eca-99e0-f3ff333fdc23.glb"
+        },
+        "clicksSelectParent": true
+      },
+      "root": {
+        "type": "standard/TransformNode",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "initialization": {},
+        "clicksSelectParent": false
+      }
+    }
+  },
+  "TigerSkullTalisman": {
+    "metadata": {
+      "summary": "A tiger skull talisman with physics collision",
+      "whenToUse": "Use this prefab to place tiger skull talismans that players can collide with"
+    },
+    "entities": {
+      "root": {
+        "mesh": {}
+      }
+    },
+    "properties": {
+      "mesh": {
+        "type": "standard/CustomMesh",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "physicsBody": {
+          "motionType": "STATIC",
+          "massProperties": {}
+        },
+        "physicsShape": {
+          "type": "CONVEX"
+        },
+        "initialization": {
+          "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-8af345da-156d-4036-bbc3-0e8404ec58a3.glb"
+        },
+        "clicksSelectParent": true
+      },
+      "root": {
+        "type": "standard/TransformNode",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "initialization": {},
+        "clicksSelectParent": false
+      }
+    }
+  },
+  "MedievalBookshelf": {
+    "metadata": {
+      "summary": "A medieval bookshelf with physics collision",
+      "whenToUse": "Use this prefab to place bookshelves that players can collide with"
+    },
+    "entities": {
+      "root": {
+        "mesh": {}
+      }
+    },
+    "properties": {
+      "mesh": {
+        "type": "standard/CustomMesh",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "physicsBody": {
+          "motionType": "STATIC",
+          "massProperties": {}
+        },
+        "physicsShape": {
+          "type": "CONVEX"
+        },
+        "initialization": {
+          "url": "https://moonlake-generation-production.s3.amazonaws.com/trellis_output/3D_object_model-a2923265-ec6b-4185-b757-f7b0de2522d9.glb"
+        },
+        "clicksSelectParent": true
+      },
+      "root": {
+        "type": "standard/TransformNode",
+        "transform": {
+          "scaling": [
+            1,
+            1,
+            1
+          ],
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "initialization": {},
+        "clicksSelectParent": false
+      }
+    }
+  }
+}
