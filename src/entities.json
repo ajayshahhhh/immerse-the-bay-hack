@@ -1,0 +1,395 @@
+{
+  "_managers": {},
+  "skybox": {},
+  "terrain": {},
+  "player": {},
+  "wooden_wall_texture_copy_2": {
+    "wooden_wall_texture_copy_2_mesh": {}
+  },
+  "wooden_floor_texture": {
+    "wooden_floor_texture_mesh": {}
+  },
+  "wooden_wall_texture_copy": {
+    "wooden_wall_texture_copy_mesh": {}
+  },
+  "wooden_wall_texture_copy_3": {
+    "wooden_wall_texture_copy_3_mesh": {}
+  },
+  "wooden_wall_texture_copy_4": {
+    "wooden_wall_texture_copy_4_mesh": {}
+  },
+  "wooden_wall_texture_copy_5": {
+    "wooden_wall_texture_copy_5_mesh": {}
+  },
+  "wooden_wall_texture_copy_6": {
+    "wooden_wall_texture_copy_6_mesh": {}
+  },
+  "wooden_wall_texture_copy_7": {
+    "wooden_wall_texture_copy_7_mesh": {}
+  },
+  "wooden_floor_texture_copy": {
+    "wooden_floor_texture_copy_mesh": {}
+  },
+  "wooden_wall_texture_copy_10": {
+    "wooden_wall_texture_copy_10_mesh": {}
+  },
+  "wooden_wall_texture_copy_11": {
+    "wooden_wall_texture_copy_11_mesh": {}
+  },
+  "wooden_floor_texture_copy_2": {
+    "wooden_floor_texture_copy_2_mesh": {}
+  },
+  "wooden_floor_texture_copy_4": {
+    "wooden_floor_texture_copy_4_mesh": {}
+  },
+  "wooden_wall_texture_copy_12": {
+    "wooden_wall_texture_copy_12_mesh": {}
+  },
+  "wooden_wall_texture_copy_14": {
+    "wooden_wall_texture_copy_14_mesh": {}
+  },
+  "wooden_wall_texture_copy_15": {
+    "wooden_wall_texture_copy_15_mesh": {}
+  },
+  "wooden_wall_texture_copy_16": {
+    "wooden_wall_texture_copy_16_mesh": {}
+  },
+  "wooden_wall_texture_copy_17": {
+    "wooden_wall_texture_copy_17_mesh": {}
+  },
+  "wooden_wall_texture_copy_18": {
+    "wooden_wall_texture_copy_18_mesh": {}
+  },
+  "wooden_wall_texture_copy_8": {
+    "wooden_wall_texture_copy_8_mesh": {}
+  },
+  "wooden_wall_texture_copy_9": {
+    "wooden_wall_texture_copy_9_mesh": {}
+  },
+  "wooden_wall_texture_copy_13": {
+    "wooden_wall_texture_copy_13_mesh": {}
+  },
+  "wooden_floor_texture_copy_3": {
+    "wooden_floor_texture_copy_3_mesh": {}
+  },
+  "wooden_wall_texture_copy_19": {
+    "wooden_wall_texture_copy_19_mesh": {}
+  },
+  "wooden_wall_texture_copy_20": {
+    "wooden_wall_texture_copy_20_mesh": {}
+  },
+  "wooden_wall_texture_copy_22": {
+    "wooden_wall_texture_copy_22_mesh": {}
+  },
+  "wooden_floor_texture_copy_5": {
+    "wooden_floor_texture_copy_5_mesh": {}
+  },
+  "wooden_floor_texture_copy_6": {
+    "wooden_floor_texture_copy_6_mesh": {}
+  },
+  "wooden_wall_texture_copy_23": {
+    "wooden_wall_texture_copy_23_mesh": {}
+  },
+  "wooden_wall_texture_copy_24": {
+    "wooden_wall_texture_copy_24_mesh": {}
+  },
+  "wooden_wall_texture_copy_25": {
+    "wooden_wall_texture_copy_25_mesh": {}
+  },
+  "wooden_wall_texture_copy_27": {
+    "wooden_wall_texture_copy_27_mesh": {}
+  },
+  "wooden_wall_texture_copy_28": {
+    "wooden_wall_texture_copy_28_mesh": {}
+  },
+  "wooden_wall_texture_copy_29": {
+    "wooden_wall_texture_copy_29_mesh": {}
+  },
+  "wooden_floor_texture_copy_8": {
+    "wooden_floor_texture_copy_8_mesh": {}
+  },
+  "wooden_wall_texture_copy_26": {
+    "wooden_wall_texture_copy_26_mesh": {}
+  },
+  "wooden_wall_texture_copy_31": {
+    "wooden_wall_texture_copy_31_mesh": {}
+  },
+  "wooden_floor_texture_copy_7": {
+    "wooden_floor_texture_copy_7_mesh": {}
+  },
+  "wooden_wall_texture_copy_32": {
+    "wooden_wall_texture_copy_32_mesh": {}
+  },
+  "wooden_wall_texture_copy_33": {
+    "wooden_wall_texture_copy_33_mesh": {}
+  },
+  "wooden_floor_texture_copy_9": {
+    "wooden_floor_texture_copy_9_mesh": {}
+  },
+  "wooden_wall_texture_copy_34": {
+    "wooden_wall_texture_copy_34_mesh": {}
+  },
+  "wooden_wall_texture_copy_35": {
+    "wooden_wall_texture_copy_35_mesh": {}
+  },
+  "wooden_wall_texture_copy_36": {
+    "wooden_wall_texture_copy_36_mesh": {}
+  },
+  "wooden_floor_texture_copy_10": {
+    "wooden_floor_texture_copy_10_mesh": {}
+  },
+  "wooden_floor_texture_copy_11": {
+    "wooden_floor_texture_copy_11_mesh": {}
+  },
+  "wooden_wall_texture_copy_37": {
+    "wooden_wall_texture_copy_37_mesh": {}
+  },
+  "wooden_wall_texture_copy_38": {
+    "wooden_wall_texture_copy_38_mesh": {}
+  },
+  "wooden_wall_texture_copy_40": {
+    "wooden_wall_texture_copy_40_mesh": {}
+  },
+  "wooden_wall_texture_copy_41": {
+    "wooden_wall_texture_copy_41_mesh": {}
+  },
+  "wooden_wall_texture_copy_42": {
+    "wooden_wall_texture_copy_42_mesh": {}
+  },
+  "wooden_floor_texture_copy_12": {
+    "wooden_floor_texture_copy_12_mesh": {}
+  },
+  "wooden_floor_texture_copy_14": {
+    "wooden_floor_texture_copy_14_mesh": {}
+  },
+  "wooden_floor_texture_copy_15": {
+    "wooden_floor_texture_copy_15_mesh": {}
+  },
+  "wooden_wall_texture_copy_43": {
+    "wooden_wall_texture_copy_43_mesh": {}
+  },
+  "wooden_floor_texture_copy_13": {
+    "wooden_floor_texture_copy_13_mesh": {}
+  },
+  "wooden_wall_texture_copy_39": {
+    "wooden_wall_texture_copy_39_mesh": {}
+  },
+  "wooden_wall_texture_copy_44": {
+    "wooden_wall_texture_copy_44_mesh": {}
+  },
+  "wooden_wall_texture_copy_46": {
+    "wooden_wall_texture_copy_46_mesh": {}
+  },
+  "wooden_wall_texture_copy_47": {
+    "wooden_wall_texture_copy_47_mesh": {}
+  },
+  "wooden_wall_texture_copy_48": {
+    "wooden_wall_texture_copy_48_mesh": {}
+  },
+  "wooden_wall_texture_copy_49": {
+    "wooden_wall_texture_copy_49_mesh": {}
+  },
+  "wooden_floor_texture_copy_16": {
+    "wooden_floor_texture_copy_16_mesh": {}
+  },
+  "wooden_wall_texture_copy_50": {
+    "wooden_wall_texture_copy_50_mesh": {}
+  },
+  "wooden_floor_texture_copy_17": {
+    "wooden_floor_texture_copy_17_mesh": {}
+  },
+  "wooden_wall_texture_copy_53": {
+    "wooden_wall_texture_copy_53_mesh": {}
+  },
+  "wooden_wall_texture_copy_54": {
+    "wooden_wall_texture_copy_54_mesh": {}
+  },
+  "wooden_wall_texture_copy_55": {
+    "wooden_wall_texture_copy_55_mesh": {}
+  },
+  "wooden_wall_texture_copy_57": {
+    "wooden_wall_texture_copy_57_mesh": {}
+  },
+  "wooden_wall_texture_copy_51": {
+    "wooden_wall_texture_copy_51_mesh": {}
+  },
+  "wooden_wall_texture_copy_52": {
+    "wooden_wall_texture_copy_52_mesh": {}
+  },
+  "wooden_wall_texture_copy_58": {
+    "wooden_wall_texture_copy_58_mesh": {}
+  },
+  "wooden_wall_texture_copy_56": {
+    "wooden_wall_texture_copy_56_mesh": {}
+  },
+  "wooden_floor_texture_copy_18": {},
+  "wall_mounted_torch": {
+    "wall_mounted_torch_mesh": {},
+    "wall_mounted_torch_light": {}
+  },
+  "medieval_wooden_bookshelf": {},
+  "satanic_stone_statue": {
+    "satanic_stone_statue_mesh": {},
+    "satanic_stone_statue_light": {}
+  },
+  "occult_summoning_circle": {
+    "occult_summoning_circle_mesh": {},
+    "occult_summoning_circle_light": {}
+  },
+  "ambient_light": {},
+  "medieval_wooden_bookshelf_copy": {},
+  "wall_mounted_torch_copy": {
+    "wall_mounted_torch_copy_mesh": {},
+    "wall_mounted_torch_copy_light": {}
+  },
+  "wooden_door_with_lock": {},
+  "medieval_rustic_bed": {
+    "medieval_rustic_bed_mesh": {}
+  },
+  "medieval_wooden_bookshelf_copy_2": {},
+  "medieval_wooden_bookshelf_copy_5": {},
+  "medieval_bookshelf": {
+    "medieval_bookshelf_mesh": {}
+  },
+  "medieval_bookshelf_copy": {},
+  "medieval_bookshelf_copy_2": {},
+  "medieval_bookshelf_copy_3": {
+    "medieval_bookshelf_copy_3_mesh": {}
+  },
+  "medieval_bookshelf_copy_4": {},
+  "medieval_bookshelf_copy_5": {},
+  "medieval_nightstand": {
+    "medieval_nightstand_mesh": {}
+  },
+  "medieval_bookshelf_copy_6": {
+    "medieval_bookshelf_copy_6_mesh": {}
+  },
+  "medieval_bookshelf_copy_7": {
+    "medieval_bookshelf_copy_7_mesh": {}
+  },
+  "medieval_nightstand_copy": {
+    "medieval_nightstand_copy_mesh": {}
+  },
+  "medieval_wooden_bed": {
+    "medieval_wooden_bed_mesh": {}
+  },
+  "rustic_crib": {
+    "rustic_crib_mesh": {}
+  },
+  "medieval_bookshelf_copy_8": {},
+  "broken_old_doll": {
+    "broken_old_doll_mesh": {}
+  },
+  "child_crayon_drawing": {
+    "child_crayon_drawing_mesh": {}
+  },
+  "child_crayon_drawing_copy": {},
+  "medieval_bookshelf_copy_9": {
+    "medieval_bookshelf_copy_9_mesh": {}
+  },
+  "child_crayon_drawing_copy_2": {},
+  "child_crayon_drawing_copy_3": {},
+  "rustic_sink": {
+    "rustic_sink_mesh": {}
+  },
+  "rustic_porcelain_bathtub": {
+    "rustic_porcelain_bathtub_mesh": {}
+  },
+  "ornate_cracked_mirror": {
+    "ornate_cracked_mirror_mesh": {}
+  },
+  "antique_grandfather_clock": {
+    "antique_grandfather_clock_mesh": {}
+  },
+  "broken_porcelain_toilet": {
+    "broken_porcelain_toilet_mesh": {}
+  },
+  "abandoned_fireplace": {
+    "abandoned_fireplace_mesh": {}
+  },
+  "old_worn_red_carpet": {
+    "old_worn_red_carpet_mesh": {}
+  },
+  "wooden_door_with_lock_copy": {
+    "wooden_door_with_lock_copy_mesh": {}
+  },
+  "old_worn_red_carpet_copy": {
+    "old_worn_red_carpet_copy_mesh": {}
+  },
+  "medieval_bookshelf_copy_10": {
+    "medieval_bookshelf_copy_10_mesh": {}
+  },
+  "medieval_bookshelf_copy_11": {
+    "medieval_bookshelf_copy_11_mesh": {}
+  },
+  "medieval_bookshelf_copy_12": {
+    "medieval_bookshelf_copy_12_mesh": {}
+  },
+  "old_red_sofa": {
+    "old_red_sofa_mesh": {}
+  },
+  "medieval_wooden_table": {
+    "medieval_wooden_table_mesh": {}
+  },
+  "medieval_wooden_table_copy": {
+    "medieval_wooden_table_copy_mesh": {}
+  },
+  "medieval_wooden_table_copy_2": {
+    "medieval_wooden_table_copy_2_mesh": {}
+  },
+  "medieval_wooden_table_copy_3": {
+    "medieval_wooden_table_copy_3_mesh": {}
+  },
+  "old_red_sofa_copy": {
+    "old_red_sofa_copy_mesh": {}
+  },
+  "medieval_nightstand_copy_2": {
+    "medieval_nightstand_copy_2_mesh": {}
+  },
+  "wall_mounted_torch_copy_2": {
+    "wall_mounted_torch_copy_2_mesh": {},
+    "wall_mounted_torch_copy_2_light": {}
+  },
+  "wall_mounted_torch_copy_3": {
+    "wall_mounted_torch_copy_3_mesh": {},
+    "wall_mounted_torch_copy_3_light": {}
+  },
+  "wall_mounted_torch_copy_4": {
+    "wall_mounted_torch_copy_4_mesh": {},
+    "wall_mounted_torch_copy_4_light": {}
+  },
+  "wall_mounted_torch_copy_5": {
+    "wall_mounted_torch_copy_5_mesh": {},
+    "wall_mounted_torch_copy_5_light": {}
+  },
+  "wall_mounted_torch_copy_6": {
+    "wall_mounted_torch_copy_6_mesh": {},
+    "wall_mounted_torch_copy_6_light": {}
+  },
+  "golden_key": {
+    "golden_key_mesh": {},
+    "golden_key_light": {}
+  },
+  "golden_key_copy": {
+    "golden_key_copy_mesh": {},
+    "golden_key_copy_light": {}
+  },
+  "golden_key_copy_2": {
+    "golden_key_copy_2_mesh": {},
+    "golden_key_copy_2_light": {}
+  },
+  "ornate_portrait_painting": {
+    "ornate_portrait_painting_mesh": {}
+  },
+  "uncanny_hooded_figure": {
+    "uncanny_hooded_figure_mesh": {},
+    "uncanny_hooded_figure_light": {}
+  },
+  "wooden_wall_texture_copy_21": {
+    "wooden_wall_texture_copy_21_mesh": {}
+  },
+  "uncanny_hooded_figure_copy": {
+    "uncanny_hooded_figure_copy_mesh": {},
+    "uncanny_hooded_figure_copy_light": {}
+  }
+}
