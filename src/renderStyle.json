@@ -1,0 +1,11 @@
+{
+  "bloom": false,
+  "chromaticAberration": false,
+  "grain": false,
+  "sharpen": false,
+  "vignette": false,
+  "exposure": 1,
+  "shader": "",
+  "outlineWidth": 0,
+  "filter": ""
+}
