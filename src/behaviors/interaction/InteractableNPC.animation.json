@@ -1,0 +1,8 @@
+{
+  "behaviorName": "InteractableNPC",
+  "alwaysRequired": ["Idle"],
+  "animationParams": [],
+  "supportedCharacterCategories": ["biped"]
+}
+
+
