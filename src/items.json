@@ -1,0 +1,28 @@
+{
+  "coin": {
+    "name": "Coin",
+    "type": "misc",
+    "image": "https://spatio-generations.s3.us-east-1.amazonaws.com/misc/items/crown-coin.png",
+    "maxStackSize": 1000
+  },
+  "apple": {
+    "name": "Apple",
+    "type": "consumable",
+    "image": "https://spatio-generations.s3.us-east-1.amazonaws.com/misc/items/shiny-apple.png",
+    "maxStackSize": 10
+  },
+  "revolver": {
+    "name": "Revolver",
+    "type": "weapon",
+    "image": "https://spatio-generations.s3.us-east-1.amazonaws.com/misc/items/revolver.png",
+    "maxStackSize": 1,
+    "prefabId": "Revolver"
+  },
+  "ak47": {
+    "name": "AK-47",
+    "type": "weapon",
+    "image": "https://spatio-generations.s3.us-east-1.amazonaws.com/misc/items/ak47.png",
+    "maxStackSize": 1,
+    "prefabId": "AK47"
+  }
+}
