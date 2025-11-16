@@ -1,0 +1,203 @@
+{
+  "characters": {
+    "player": {
+      "name": "Player"
+    },
+    "merchant": {
+      "name": "Mysterious Merchant"
+    }
+  },
+  "trees": {
+    "merchant_shop": {
+      "nodes": {
+        "0": {
+          "nodeType": "NPC",
+          "characterId": "merchant",
+          "text": "Welcome to my shop, traveler! I have rare wares from distant lands.",
+          "childrenIds": [1, 2]
+        },
+        "1": {
+          "nodeType": "PLAYER",
+          "characterId": "player",
+          "text": "I'm looking to browse your items.",
+          "conditionals": [],
+          "conditionalText": "",
+          "childrenIds": [3]
+        },
+        "2": {
+          "nodeType": "PLAYER",
+          "characterId": "player",
+          "text": "I'd like to chat for a bit.",
+          "conditionals": [],
+          "conditionalText": "",
+          "childrenIds": [4]
+        },
+        "3": {
+          "nodeType": "NPC",
+          "characterId": "merchant",
+          "text": "Excellent! I have a magnificent MP5 from the Northern Arsenal. A true masterpiece of craftsmanship. I could part with it for just 5 coins.",
+          "childrenIds": [5, 6]
+        },
+        "4": {
+          "nodeType": "NPC",
+          "characterId": "merchant",
+          "text": "Of course! I do enjoy good conversation. What would you like to talk about?",
+          "childrenIds": [7, 8]
+        },
+        "5": {
+          "nodeType": "PLAYER",
+          "characterId": "player",
+          "text": "I'll take the MP5 for 5 coins.",
+          "conditionals": [
+            {
+              "manager": "InventoryManager",
+              "function": "getItemCount",
+              "args": ["coin"],
+              "comparison": "greaterThanOrEqual",
+              "expectedValue": 5
+            }
+          ],
+          "conditionalText": "Need 5+ coins",
+          "childrenIds": [9]
+        },
+        "6": {
+          "nodeType": "PLAYER",
+          "characterId": "player",
+          "text": "That's too expensive for me.",
+          "conditionals": [],
+          "conditionalText": "",
+          "childrenIds": [10]
+        },
+        "7": {
+          "nodeType": "PLAYER",
+          "characterId": "player",
+          "text": "Tell me about your travels.",
+          "conditionals": [],
+          "conditionalText": "",
+          "childrenIds": [11]
+        },
+        "8": {
+          "nodeType": "PLAYER",
+          "characterId": "player",
+          "text": "You look handsome today, my love.",
+          "conditionals": [
+            {
+              "manager": "FlagsManager",
+              "function": "getFlag",
+              "args": ["merchant_romanced"],
+              "comparison": "equal",
+              "expectedValue": true
+            }
+          ],
+          "conditionalText": "Romance unlocked",
+          "childrenIds": [12]
+        },
+        "9": {
+          "nodeType": "NPC",
+          "characterId": "merchant",
+          "text": "Excellent! Here's your MP5. May it serve you well in your adventures!",
+          "childrenIds": [13]
+        },
+        "10": {
+          "nodeType": "NPC",
+          "characterId": "merchant",
+          "text": "I understand, traveler. Perhaps when fortune smiles upon you, you'll return.",
+          "childrenIds": [14]
+        },
+        "11": {
+          "nodeType": "NPC",
+          "characterId": "merchant",
+          "text": "Ah, my travels! I've journeyed through the Crystal Caves of the East, where gems sing in harmony with the wind. The beauty there... it reminds me of your eyes.",
+          "childrenIds": [15, 16]
+        },
+        "12": {
+          "nodeType": "NPC",
+          "characterId": "merchant",
+          "text": "My dearest! Your words warm my heart more than the desert sun. Come here, let me hold you close.",
+          "childrenIds": [17]
+        },
+        "13": {
+          "nodeType": "OUTCOME",
+          "effects": [
+            {
+              "manager": "InventoryManager",
+              "function": "addItem",
+              "args": ["mp5", 1]
+            },
+            {
+              "manager": "InventoryManager",
+              "function": "removeItem",
+              "args": ["coin", 5]
+            }
+          ]
+        },
+        "14": {
+          "nodeType": "OUTCOME",
+          "effects": []
+        },
+        "15": {
+          "nodeType": "PLAYER",
+          "characterId": "player",
+          "text": "That's... very poetic of you to say.",
+          "conditionals": [],
+          "conditionalText": "",
+          "childrenIds": [18]
+        },
+        "16": {
+          "nodeType": "PLAYER",
+          "characterId": "player",
+          "text": "Are you trying to charm me, merchant?",
+          "conditionals": [],
+          "conditionalText": "",
+          "childrenIds": [19]
+        },
+        "17": {
+          "nodeType": "OUTCOME",
+          "effects": []
+        },
+        "18": {
+          "nodeType": "NPC",
+          "characterId": "merchant",
+          "text": "I speak only truth. In all my travels, I've never met someone as captivating as you. Would you... consider traveling with me?",
+          "childrenIds": [20, 21]
+        },
+        "19": {
+          "nodeType": "NPC",
+          "characterId": "merchant",
+          "text": "Charm? No, dear traveler. I speak from the heart. Your presence here has made this humble shop feel like a palace.",
+          "childrenIds": [20, 21]
+        },
+        "20": {
+          "nodeType": "PLAYER",
+          "characterId": "player",
+          "text": "I would love to travel with you.",
+          "conditionals": [],
+          "conditionalText": "",
+          "childrenIds": [22]
+        },
+        "21": {
+          "nodeType": "PLAYER",
+          "characterId": "player",
+          "text": "I'm flattered, but I must decline.",
+          "conditionals": [],
+          "conditionalText": "",
+          "childrenIds": [23]
+        },
+        "22": {
+          "nodeType": "OUTCOME",
+          "effects": [
+            {
+              "manager": "FlagsManager",
+              "function": "setFlag",
+              "args": ["merchant_romanced", true]
+            }
+          ]
+        },
+        "23": {
+          "nodeType": "OUTCOME",
+          "effects": []
+        }
+      }
+    }
+  }
+}
