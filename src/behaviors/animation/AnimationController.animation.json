@@ -1,0 +1,8 @@
+{
+  "behaviorName": "AnimationController",
+  "alwaysRequired": ["Idle"],
+  "animationParams": [],
+  "supportedCharacterCategories": ["biped"]
+}
+
+
